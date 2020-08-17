@@ -11,8 +11,18 @@ Reality's Edge: Cyberpunk Skirmish Rules
 
 #### Contents ####
 
+* [Important][]
 * [Overview][]
 * [Links][]
+
+## Important ##
+[Important]: #important
+
+These datafiles are intended for use with the miniatures skirmish game "Reality's Edge" and in no way replaces the need to use the core rulebook "Reality's Edge: Cyberpunk Skirmish Rules". The datafiles simply assist with creating and managing a crew, and compiles keyword references and model specific rules in an easy to find manner using the BattleScribe app.
+
+This data repository includes minor edits correcting typos, standardising inconsistencies, changing incorrect (but deductable) names and references. Also, some rules have been shortened to better suit readability while keeping important wording. All included rules and references will have book and page references for when exact wording is required.
+
+Operator and Drone profiles are changed dynamically as you make selections, and equip certain gear or chrome, including anything with the On/Off rule. Weapon profiles, and Operator profiles that are otherwise situational, are not yet dynamically changed.
 
 ## Overview ##
 [Overview]: #overview
