@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="29c4-7ecd-7e60-5177" name="Reality&apos;s Edge" revision="1" battleScribeVersion="2.03" authorName="saikez" authorContact="saikez@yahoo.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <readme>Built from scratch with much frustration :^)</readme>
+<gameSystem id="29c4-7ecd-7e60-5177" name="Reality&apos;s Edge" revision="2" battleScribeVersion="2.03" authorName="saikez" authorContact="saikez@yahoo.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <readme>Built from scratch with much frustration :^)
+
+Operator and Drone profiles are changed dynamically as you make selections, and equip certain gear or chrome, including anything with the On/Off rule. Weapon profiles, and Operator profiles that are otherwise situational, are not yet dynamically changed.</readme>
   <publications>
     <publication id="35c0-4280-5bd0-3fd1" name="Reality&apos;s Edge" shortName="Reality&apos;s Edge" publisher="Reality&apos;s Edge Cyberpunk Skirmish Rules" publicationDate="22 Aug 2019" publisherUrl="https://ospreypublishing.com/reality-039-s-edge"/>
+    <publication id="d505-f603-50c8-bd08" name="Reality&apos;s Edge Errata" shortName="Reality&apos;s Edge Errata" publisher="Reality&apos;s Edge Errata and FAQ 1.2" publicationDate="7 Jul 2020"/>
   </publications>
   <costTypes>
     <costType id="7d2d-b9e4-4f97-2e68" name="CC" defaultCostLimit="-1.0" hidden="false"/>

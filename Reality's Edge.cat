@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fd28-208c-55aa-1d7c" name="Reality&apos;s Edge" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="29c4-7ecd-7e60-5177" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fd28-208c-55aa-1d7c" name="Reality&apos;s Edge" revision="2" battleScribeVersion="2.03" authorName="saikez" authorContact="saikez@yahoo.com" library="false" gameSystemId="29c4-7ecd-7e60-5177" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>Built from scratch with much frustration :^)
+
+Operator and Drone profiles are changed dynamically as you make selections, and equip certain gear or chrome, including anything with the On/Off rule. Weapon profiles, and Operator profiles that are otherwise situational, are not yet dynamically changed.</readme>
   <selectionEntries>
     <selectionEntry id="f1d0-2c1f-b262-e614" name="Reaction Drone" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -1544,8 +1547,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f6e-1c89-3d46-f7db" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="370b-13f2-f867-1142" name="Corrode" publicationId="35c0-4280-5bd0-3fd1" page="176" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="3014-43f2-e7d1-b40b" name="Corrode" hidden="false" targetId="bc54-6963-b7c3-8311" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1553,13 +1556,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">If successful, it reduces a target’s Firewall stat by -2 until the start of the target’s next activation or the end of the next turn’s Clean-Up Phase if the target does not activate.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1573,8 +1571,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="959e-bdda-181b-a0a9" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="5d30-f81c-7596-5823" name="Decapitate" publicationId="35c0-4280-5bd0-3fd1" page="176" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="1e7c-023e-0164-f2ed" name="Decapitate" hidden="false" targetId="b839-72fa-ea39-2457" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1582,13 +1580,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">2</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Decapitate targets a model with DHP. If successful, the target suffers D6+2 digital damage points. If the Hacker rolls a Critical, it does D3 digital damage points and D3 actual damage points from neuro-feedback shock—unless the target is a Virtual being, in which case it does 6 digital damage points, instead. If they roll a Fumble, the Hacker suffers 1 damage point from neuro-feedback shock.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1602,8 +1595,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcae-72ab-c1ed-f9e4" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="1fcc-27ae-e492-ffc6" name="Enslave" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="7ce0-bb3a-7b53-6302" name="Enslave" hidden="false" targetId="97b3-35d2-76a6-999c" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1611,13 +1604,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Enslave only targets models with the Bot and Cyborg types. On a success, the hacker gains control over the target for 1 turn. During that turn, the Hacker may roll for the target’s Activation Test during their own initiative. Otherwise, the Hacker determines how the model spends its available AP. On a Critical, the Hacker maintains control for D3 turns, ending on the Clean-Up Phase of the last turn. On a Fumble, the target’s Firewall gains +2 until the end of the game.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1632,8 +1620,8 @@
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c25-5c8d-4c88-1117" type="max"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b277-567d-8a1d-cfc3" type="min"/>
                       </constraints>
-                      <profiles>
-                        <profile id="97c4-055e-a326-354a" name="Gatecrasher" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="4502-bc9d-89c3-85e2" name="Gatecrasher" hidden="false" targetId="0805-83a7-99fd-a38c" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1641,13 +1629,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">0</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Gatecrasher only targets networks. If the roll is successful, gain Access. If it is a Fumble, the Hacker’s crew gains a Trace token. A Critical has no effect.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1661,8 +1644,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4df5-3727-614b-e475" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="9df7-8b5d-ebed-cffe" name="Nerf-A-Lyze" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="5501-d839-8be4-71df" name="Nerf-A-Lyze" hidden="false" targetId="7b91-2b40-a45e-a010" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1670,13 +1653,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">12</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Nerf-a-lyze can target any weapon, cyber body part, individual cybernetic enhancement, bot, or Cyborg. It has a +2 CYB bonus and a range of 12”. On a success, the target suffers the Nerf status with a -2 penalty for D3 turns. On a Critical, Nerf-a-lyze disables the target for D3 turns, instead. On a Fumble, the Hacker’s crew gains a Trace token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1690,8 +1668,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c460-de4a-3539-f6f6" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="99c4-30dc-4c18-108a" name="Overheat" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="32c2-7045-ab80-47ff" name="Overheat" hidden="false" targetId="f429-868b-f63c-0365" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1699,13 +1677,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Overheat targets weapons carried by other models, which includes cybernetic body parts, enhancements, and all equipment with an attack profile. On a success, the target overheats and the model carrying it automatically takes D3 damage. Criticals have no effect. On a Fumble, the Hacker’s crew gains a Trace token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1719,8 +1692,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a03e-6b0b-1c98-19f3" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="1cee-c22d-53dc-9559" name="Overload" publicationId="35c0-4280-5bd0-3fd1" page="178" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="dce1-f813-b413-ca37" name="Overload" hidden="false" targetId="bc52-1b1e-96f7-5b9c" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1728,13 +1701,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">12</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Overload targets all weapons carried by a model, including any cybernetic weapons and items with a weapon profile, and has a +1 CYB bonus. Do not nominate a single weapon for this attack—on a success, all weapons carried by the target (firearms, melee weapons, etc.) are disabled on the target’s next activation. On a Critical, the weapons are disabled for two turns, instead.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1748,15 +1716,17 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd1d-7ee3-b74f-79ae" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="0221-655a-b07b-e6f6" name="Sabotage" publicationId="35c0-4280-5bd0-3fd1" page="178" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">N/A</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Hackers may use Sabotage to target anything susceptible to the Disable status. On a success, the target is disabled for D3+1 turns. On a Critical, the target is bricked instead. On a Fumble, the Hacker’s crew gains a Trace token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="cbd0-2711-7889-901b" name="Sabotage" hidden="false" targetId="47a8-9484-cfb4-ab40" type="profile">
+                          <modifiers>
+                            <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
+                              <conditions>
+                                <condition field="selections" scope="2c63-b8e0-b1b8-57e0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39cc-38ec-fd3f-64c7" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1771,8 +1741,8 @@
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3373-a4a8-a50d-959d" type="max"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e8d-4fab-9254-d7aa" type="min"/>
                       </constraints>
-                      <profiles>
-                        <profile id="eb46-7140-313f-82ff" name="Slice" publicationId="35c0-4280-5bd0-3fd1" page="178" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="564c-499e-7a76-b736" name="Slice" hidden="false" targetId="0c19-a8e3-84ec-7bff" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1780,13 +1750,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">12</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Slice targets models with DHP, and provides a +1 CYB bonus. On a success, the target suffers D3+1 digital damage. On a Critical, the digital damage is increased to D3+3. Fumbles have no effect.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1804,8 +1769,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c0c-2ccd-b85b-2bdf" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="a275-3005-3906-15bf" name="Control Camera" publicationId="35c0-4280-5bd0-3fd1" page="179" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="0ef1-9daa-63c2-be71" name="Control Camera" hidden="false" targetId="5907-0b65-e222-6130" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1813,13 +1778,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Control Camera targets an intact structure or building. To do so, make a cyber-attack against a Firewall of 4. An enemy player may roll defense for the building. On a success, the Hacker may place a camera token anywhere on the building’s exterior; the token must physically touch the building. While in control of the camera, the Hacker can draw line of sight from the camera token and may use the token as a point of origin for any apps. A Hacker can only control one camera token at a time but may dismiss it at any time during their activation. Finally, an enemy Hacker may make a cyber-attack against the camera (again, against a Firewall of 4). If they are successful, remove the camera token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1833,8 +1793,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43c8-7f6b-e7b4-3477" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="61c5-0906-36b3-7e38" name="Distortion" publicationId="35c0-4280-5bd0-3fd1" page="179" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="9b1b-a58d-c229-ee8d" name="Distortion" hidden="false" targetId="0eb4-4561-aa66-de00" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1842,13 +1802,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Make a cyber-attack against a Firewall of 4. On a success, the Hacker may place a Distortion token anywhere within range. The token has a 4” area of effect and lasts until the beginning of the Hacker’s next activation phase. All models within this area of effect suffer -2 to their Cyber stat.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1862,8 +1817,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="882f-e1c4-fe8a-1780" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="d7ef-18e2-d779-2202" name="Light Blast" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="7ea1-b579-00f9-3615" name="Light Blast" hidden="false" targetId="a92c-e2d5-f98a-e5fd" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1871,13 +1826,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Light Blast targets a single location or model within 6” of an intact structure or building. Make a cyber-attack against a Firewall of 4. An enemy player may roll defense for the building. On a success, place the Small Blast template over the designated location. All models under the template must pass a Survival Test (MET/ TN 10) or lose all AP during their next activation. Note that if this happens, the model’s controller should take an Activation test for the model as usual, to check for turnover.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1891,8 +1841,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e30-fd7f-3827-88de" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="80ed-c40a-0343-cf6c" name="Mischief Maker" publicationId="35c0-4280-5bd0-3fd1" page="180" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="eb22-fbb2-fd4c-965f" name="Mischief Maker" hidden="false" targetId="a8d6-852e-5fb1-4cb4" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1900,13 +1850,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Mischief Maker targets a single location or model within 6” of an intact structure or building. Make a cyber-attack against a Firewall of 4. An enemy player may roll defense for the building. On a success, place the Large Blast template over the designated location. All models under the template must pass a Survival Test or suffer a -2 penalty to all Stat Tests and Opposed Tests on their next activation.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1920,8 +1865,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5408-b0ab-9ee9-50c9" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="5f80-de29-ce57-03ff" name="Raise Barrier" publicationId="35c0-4280-5bd0-3fd1" page="180" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="456a-5009-7818-20d6" name="Raise Barrier" hidden="false" targetId="62bd-573b-1a1d-54b6" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1929,13 +1874,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Hackers may only use Raise Barrier in an open area more than 3” from a building or building ruins. Make a cyberattack against a Firewall of 4. An enemy player may roll defense for the barrier controller. On a success, the Hacker may place a single piece of linear terrain no more than 2” long, 1” high, and .5” thick anywhere within range. The barrier provides heavy cover and counts as a piece of linear terrain. A Hacker can only control one active barrier at a time, though they may dismiss it at any time during their activation. Finally, an enemy Hacker may make a cyber-attack against the barrier (again, against a Firewall of 4). If they are successful, remove the barrier immediately.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1949,8 +1889,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccc6-78f0-0870-39fb" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="3cb1-7d3f-9812-c9bc" name="Summon Idoru" publicationId="35c0-4280-5bd0-3fd1" page="180" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="b6c1-ad8f-1284-c8ff" name="Summon Idoru" hidden="false" targetId="de9b-dc3c-a4a9-e9fa" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1958,13 +1898,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Hackers may only use Summon Idoru within 3” of a building or similar structure. Make a cyberattack against a Firewall of 4. An enemy player may roll defense for the building. If successful, place a model representing the Idoru within range of the app. For each turn the Idoru remains on the board, roll a D6. On a 1–5, an enemy player must place a bystander anywhere within 6” of the Idoru. On a 6, they must place a whole bystander crowd, instead. The bystanders act as usual. A Hacker may only control one Idoru at a time, though they can dismiss it at any time during their activation. Finally, an enemy Hacker may make a cyber-attack against the Idoru (again against a Firewall of 4). If they are successful, remove the Idoru immediately. The bystanders remain, even if the Idoru is dismissed.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -1982,8 +1917,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e595-0791-c5de-802a" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="4d5d-d36e-74a3-0e80" name="Bloodhound" publicationId="35c0-4280-5bd0-3fd1" page="182" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="0949-9223-a4dd-d7bc" name="Bloodhound" hidden="false" targetId="dd79-0484-d87f-1624" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -1991,13 +1926,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">When used, place a token next to the target to indicate the software’s presence. A model may have multiple active Bloodhound tokens, but only one per target. Should a Hacker make a cyber-attack against a model with a Bloodhound token, their crew gains one Trace token. Once this occurs, remove the Bloodhound token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -2011,8 +1941,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9838-bb94-98d3-f378" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="9656-afef-108a-4a5c" name="Guardian Angel" publicationId="35c0-4280-5bd0-3fd1" page="182" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="f1fc-6ade-1554-72cd" name="Guardian Angel" hidden="false" targetId="6ff3-d5e7-6cd2-8590" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -2020,23 +1950,9 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">2</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Use a token or model to represent the Angel Sprite and choose a point for the sprite’s tether. This must be the operative or another model. The Angel Sprite uses the below stats and rules. Note that it does not have a Cyber stat and cannot make cyber-attacks, but it can be targeted by cyber-attacks, as it is a Virtual being. A model may only control one Angel Sprite at a time. Sprites have no effect on CAT Terminals and other network nodes.</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile id="66a4-ac3b-6628-468d" name="Guardian Angel" publicationId="35c0-4280-5bd0-3fd1" page="182" hidden="false" typeId="d268-a606-8ce6-9f48" typeName=" Virtual Being">
-                          <characteristics>
-                            <characteristic name="CYB" typeId="0c4c-df75-62e0-8822">N/A</characteristic>
-                            <characteristic name="FW" typeId="ef32-239f-0670-f2ba">5</characteristic>
-                            <characteristic name="DHP" typeId="b837-3a2a-d607-511d">4</characteristic>
-                            <characteristic name="MOV/Tether" typeId="a0f4-533f-77be-3cf3">5/6</characteristic>
-                            <characteristic name="AP" typeId="4a04-f968-f43b-d12f">2</characteristic>
-                            <characteristic name="Special Rules" typeId="e038-ab6e-4d93-9033">Has the Virtual Rule. Further, one friendly model in base contact with the Angel Sprite gains a +2 bonus to their Firewall stat. This is immediately removed if the Angel Sprite leaves base contact for any reason.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                        <infoLink id="74d7-14df-4f45-300c" name="Angel Sprite" hidden="false" targetId="6116-72da-56be-9b84" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -2050,8 +1966,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19e7-e6bc-1da5-7e36" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="085b-4df5-3992-917e" name="HRO-No" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="c961-72d9-d6b7-218e" name="HRO-No" hidden="false" targetId="7d0f-cad3-8855-2f3b" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -2059,13 +1975,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">When used, place an HRO-No token next to the target. A Hacker must pass an Intelligence Test to even attempt to make a cyber-attack against the model with the HRO-No token. If they pass, they may attack as usual, and the HRO-No token is removed. On a failure, they may not attack that model and their AP is wasted.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -2079,8 +1990,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8494-6c1b-a4ac-3666" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="a14d-3acd-db46-2761" name="Logic Bomb" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="b2b0-cbe1-64c5-d091" name="Logic Bomb" hidden="false" targetId="e551-4056-d3b2-82cc" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -2088,13 +1999,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Logic Bomb may be used on any friendly model. A user may only have one Logic Bomb active at a time. Put a token next to the target to indicate the presence of the bomb. This is not hidden from other players who must decide whether they want to target the model with the Logic Bomb. Logic Bomb temporarily adds a +1 FW bonus to the target. Should a cyber-attack fail against that model, the enemy Hacker who made the attempt suffers D3 digital damage. After this damage is dealt, the Logic Bomb is removed, including the +1 Firewall bonus.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -2108,15 +2014,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="124e-f4e4-1957-b52c" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="ffdd-ccb6-d61e-234f" name="Reconnect" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">Self</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Reconnect may only affect the user and heals up to D3 DHP (this cannot provide more than their starting DHP).</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="2a04-06ca-7349-8915" name="Reconnect" hidden="false" targetId="f3d0-480e-f049-bed9" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -2130,8 +2030,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b99-e676-73ad-dd55" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="9fc7-a5ed-d516-4e27" name="Shield" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="9922-16ab-1aaa-d788" name="Shield" hidden="false" targetId="2519-512a-585e-0674" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -2139,13 +2039,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Shield intertwines its own security protocols with the native programs of all friends within a short distance. Shield lasts until the start of the Hacker’s next activation. All friendly models within range gain a +1 bonus to their Firewall stat. Friendly models are defined as members of the same crew and any models under their direct control.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -2163,15 +2058,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbe6-b692-37bd-6c08" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="fa5b-d74b-7e7f-c6df" name="Camouflage" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">N/A</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">When used, the player may remove one Trace token from their crew.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="e357-d622-4e14-0c7d" name="Camouflage" hidden="false" targetId="ab9a-1d45-7d67-3ad5" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -2185,15 +2074,17 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8487-3e35-09f7-9fa4" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="eba2-ce09-410f-3b4f" name="Holo-Targeting" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">N/A</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">The target gains +1 to their Aim stat during their next activation. Note that this bonus does not stack with the bonus from a neural link, as they are essentially the same thing.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="6d80-6134-7cff-b250" name="Holo-Targeting" hidden="false" targetId="14d3-cc99-0dae-a35a" type="profile">
+                          <modifiers>
+                            <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
+                              <conditions>
+                                <condition field="selections" scope="2c63-b8e0-b1b8-57e0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="39cc-38ec-fd3f-64c7" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -2207,8 +2098,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="711c-6c37-c2b7-0109" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="0a21-acc1-a775-d250" name="Hyper Sight" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="8274-8984-39df-7ae5" name="Hyper Sight" hidden="false" targetId="4a79-d16b-744f-b3d6" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -2216,13 +2107,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">The target may draw line of sight from the Hacker’s perspective for any attacks or skills they possess.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -2236,8 +2122,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f07e-a719-9dcc-596a" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="73e0-b51c-2701-135a" name="Overclock" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="6fbd-6c90-b12c-3955" name="Overclock" hidden="false" targetId="cbab-a044-2604-62c7" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -2245,13 +2131,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">This app may only target a friendly model with a piece of chrome that provides a bonus to a Move or Strength stat. The target adds +2 to that stat during their next activation.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -2265,8 +2146,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c172-e0bc-d5e9-987d" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="860f-2a27-8173-fd5e" name="Summon Demon" publicationId="35c0-4280-5bd0-3fd1" page="185" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="556c-19b6-a3de-41c0" name="Demon Sprite" hidden="false" targetId="9fd2-7901-a8f3-a224" type="profile"/>
+                        <infoLink id="3911-b03f-e323-46a6" name="Summon Demon" hidden="false" targetId="ff5b-ce9b-93f3-6fb8" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -2274,23 +2156,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">2</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Use a token or model to designate the Demon Sprite, then choose a point for the sprite’s tether. This must be the operative or another model within range—even an enemy model. The Demon Sprite uses the below stats and rules. Note that it does not have a Cyber stat and cannot make cyber-attacks, but it can be targeted by cyber-attacks, as it is a Virtual being. A model may only control one Demon Sprite at a time. Sprites have no effect on CAT Terminals and other network nodes.</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile id="d207-6e63-1f01-5e93" name="Summon Demon" hidden="false" typeId="d268-a606-8ce6-9f48" typeName=" Virtual Being">
-                          <characteristics>
-                            <characteristic name="CYB" typeId="0c4c-df75-62e0-8822">N/A</characteristic>
-                            <characteristic name="FW" typeId="ef32-239f-0670-f2ba">5</characteristic>
-                            <characteristic name="DHP" typeId="b837-3a2a-d607-511d">4</characteristic>
-                            <characteristic name="MOV/Tether" typeId="a0f4-533f-77be-3cf3">5/6</characteristic>
-                            <characteristic name="AP" typeId="4a04-f968-f43b-d12f">2</characteristic>
-                            <characteristic name="Special Rules" typeId="e038-ab6e-4d93-9033">Has the Virtual Rule. Further, one model in base contact with the Demon Sprite suffers a -2 penalty to their Firewall stat. This is immediately removed if the Demon Sprite leaves base contact for any reason.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -2304,8 +2171,8 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="038c-51a5-4819-7b2b" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="b7ad-923e-807a-2a10" name="Troubleshooter" publicationId="35c0-4280-5bd0-3fd1" page="185" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+                      <infoLinks>
+                        <infoLink id="6d6c-5f88-c262-9983" name="Troubleshooter" hidden="false" targetId="e6cd-b7f1-4eea-ec00" type="profile">
                           <modifiers>
                             <modifier type="increment" field="206a-a420-1fef-4b05" value="2">
                               <conditions>
@@ -2313,13 +2180,8 @@
                               </conditions>
                             </modifier>
                           </modifiers>
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Troubleshooter targets disabled friendly models or items carried by a friendly model. The operative can also use this app on themselves and their own items. Make an Intelligence Test with a +1 bonus from the app. On a success, the model, equipment, or item is no longer disabled. On a failure, nothing happens.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6572,15 +6434,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c584-4efb-f4c2-6b83" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="1b09-e2a4-6b36-caa8" name="Corrode" publicationId="35c0-4280-5bd0-3fd1" page="176" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">If successful, it reduces a target’s Firewall stat by -2 until the start of the target’s next activation or the end of the next turn’s Clean-Up Phase if the target does not activate.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="f0f5-ec8e-cf25-edb9" name="Corrode" hidden="false" targetId="bc54-6963-b7c3-8311" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6594,15 +6450,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c99-77e3-93fc-f2f2" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="dbd5-15cb-7063-4852" name="Decapitate" publicationId="35c0-4280-5bd0-3fd1" page="176" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">2</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Decapitate targets a model with DHP. If successful, the target suffers D6+2 digital damage points. If the Hacker rolls a Critical, it does D3 digital damage points and D3 actual damage points from neuro-feedback shock—unless the target is a Virtual being, in which case it does 6 digital damage points, instead. If they roll a Fumble, the Hacker suffers 1 damage point from neuro-feedback shock.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="6d69-81ce-9d12-ed87" name="Decapitate" hidden="false" targetId="b839-72fa-ea39-2457" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6616,15 +6466,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93f5-8740-2b95-e533" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="40f8-3547-6054-c8b7" name="Enslave" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Enslave only targets models with the Bot and Cyborg types. On a success, the hacker gains control over the target for 1 turn. During that turn, the Hacker may roll for the target’s Activation Test during their own initiative. Otherwise, the Hacker determines how the model spends its available AP. On a Critical, the Hacker maintains control for D3 turns, ending on the Clean-Up Phase of the last turn. On a Fumble, the target’s Firewall gains +2 until the end of the game.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="fd9c-a7d1-ee0a-ceb1" name="Enslave" hidden="false" targetId="97b3-35d2-76a6-999c" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6639,15 +6483,9 @@
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2af7-76b1-7288-0caf" type="max"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e576-b70c-4ddd-f8f6" type="min"/>
                       </constraints>
-                      <profiles>
-                        <profile id="bed6-6eec-d6ba-0537" name="Gatecrasher" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">0</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Gatecrasher only targets networks. If the roll is successful, gain Access. If it is a Fumble, the Hacker’s crew gains a Trace token. A Critical has no effect.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="6a2f-c997-f2d3-cdb5" name="Gatecrasher" hidden="false" targetId="0805-83a7-99fd-a38c" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6661,15 +6499,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d6d-48ed-98fc-521b" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="2959-119f-874f-e886" name="Nerf-A-Lyze" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">12</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Nerf-a-lyze can target any weapon, cyber body part, individual cybernetic enhancement, bot, or Cyborg. It has a +2 CYB bonus and a range of 12”. On a success, the target suffers the Nerf status with a -2 penalty for D3 turns. On a Critical, Nerf-a-lyze disables the target for D3 turns, instead. On a Fumble, the Hacker’s crew gains a Trace token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="5af3-1131-829f-dd44" name="Nerf-A-Lyze" hidden="false" targetId="7b91-2b40-a45e-a010" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6683,15 +6515,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d8e-8e4e-636a-7766" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="1dfb-a11e-69bb-0258" name="Overheat" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Overheat targets weapons carried by other models, which includes cybernetic body parts, enhancements, and all equipment with an attack profile. On a success, the target overheats and the model carrying it automatically takes D3 damage. Criticals have no effect. On a Fumble, the Hacker’s crew gains a Trace token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="0e62-722a-9edc-a293" name="Overheat" hidden="false" targetId="f429-868b-f63c-0365" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6705,15 +6531,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f41-6547-f635-e3da" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="0132-a0b9-a1e2-d75e" name="Overload" publicationId="35c0-4280-5bd0-3fd1" page="178" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">12</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Overload targets all weapons carried by a model, including any cybernetic weapons and items with a weapon profile, and has a +1 CYB bonus. Do not nominate a single weapon for this attack—on a success, all weapons carried by the target (firearms, melee weapons, etc.) are disabled on the target’s next activation. On a Critical, the weapons are disabled for two turns, instead.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="9cab-a126-3fc7-dfe0" name="Overload" hidden="false" targetId="bc52-1b1e-96f7-5b9c" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6727,15 +6547,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e927-e4d9-d1a1-e0a8" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="9b0e-bad3-53bb-b896" name="Sabotage" publicationId="35c0-4280-5bd0-3fd1" page="178" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">N/A</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Hackers may use Sabotage to target anything susceptible to the Disable status. On a success, the target is disabled for D3+1 turns. On a Critical, the target is bricked instead. On a Fumble, the Hacker’s crew gains a Trace token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="0cf7-86ad-8ced-f3fc" name="Sabotage" hidden="false" targetId="47a8-9484-cfb4-ab40" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6776,15 +6590,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d16-dbca-af2e-b13d" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="56d7-af90-651e-f5c3" name="Control Camera" publicationId="35c0-4280-5bd0-3fd1" page="179" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Control Camera targets an intact structure or building. To do so, make a cyber-attack against a Firewall of 4. An enemy player may roll defense for the building. On a success, the Hacker may place a camera token anywhere on the building’s exterior; the token must physically touch the building. While in control of the camera, the Hacker can draw line of sight from the camera token and may use the token as a point of origin for any apps. A Hacker can only control one camera token at a time but may dismiss it at any time during their activation. Finally, an enemy Hacker may make a cyber-attack against the camera (again, against a Firewall of 4). If they are successful, remove the camera token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="66ea-9d32-2b80-72a8" name="Control Camera" hidden="false" targetId="5907-0b65-e222-6130" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6798,15 +6606,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb4b-42a6-dbac-d373" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="a630-c30f-3286-7b3b" name="Distortion" publicationId="35c0-4280-5bd0-3fd1" page="179" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Make a cyber-attack against a Firewall of 4. On a success, the Hacker may place a Distortion token anywhere within range. The token has a 4” area of effect and lasts until the beginning of the Hacker’s next activation phase. All models within this area of effect suffer -2 to their Cyber stat.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="86db-119c-52ef-d88c" name="Distortion" hidden="false" targetId="0eb4-4561-aa66-de00" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6820,15 +6622,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0fc-f40d-9292-33b9" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="ea59-d1ca-a406-f3d5" name="Light Blast" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Light Blast targets a single location or model within 6” of an intact structure or building. Make a cyber-attack against a Firewall of 4. An enemy player may roll defense for the building. On a success, place the Small Blast template over the designated location. All models under the template must pass a Survival Test (MET/ TN 10) or lose all AP during their next activation. Note that if this happens, the model’s controller should take an Activation test for the model as usual, to check for turnover.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="b468-25a4-642c-8332" name="Light Blast" hidden="false" targetId="a92c-e2d5-f98a-e5fd" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6842,15 +6638,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61e9-bf1f-142b-4e43" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="78a7-5658-2e01-7008" name="Mischief Maker" publicationId="35c0-4280-5bd0-3fd1" page="180" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Mischief Maker targets a single location or model within 6” of an intact structure or building. Make a cyber-attack against a Firewall of 4. An enemy player may roll defense for the building. On a success, place the Large Blast template over the designated location. All models under the template must pass a Survival Test or suffer a -2 penalty to all Stat Tests and Opposed Tests on their next activation.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="4613-5b4f-ea9e-3260" name="Mischief Maker" hidden="false" targetId="a8d6-852e-5fb1-4cb4" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6864,15 +6654,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f413-8502-3c0f-34b8" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="ecbb-926f-4e8a-75ea" name="Raise Barrier" publicationId="35c0-4280-5bd0-3fd1" page="180" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Hackers may only use Raise Barrier in an open area more than 3” from a building or building ruins. Make a cyberattack against a Firewall of 4. An enemy player may roll defense for the barrier controller. On a success, the Hacker may place a single piece of linear terrain no more than 2” long, 1” high, and .5” thick anywhere within range. The barrier provides heavy cover and counts as a piece of linear terrain. A Hacker can only control one active barrier at a time, though they may dismiss it at any time during their activation. Finally, an enemy Hacker may make a cyber-attack against the barrier (again, against a Firewall of 4). If they are successful, remove the barrier immediately.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="9afb-3b07-b8b6-110c" name="Raise Barrier" hidden="false" targetId="62bd-573b-1a1d-54b6" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6886,15 +6670,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="900d-25d3-13e8-2090" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="baa2-ddc5-2840-72be" name="Summon Idoru" publicationId="35c0-4280-5bd0-3fd1" page="180" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Hackers may only use Summon Idoru within 3” of a building or similar structure. Make a cyberattack against a Firewall of 4. An enemy player may roll defense for the building. If successful, place a model representing the Idoru within range of the app. For each turn the Idoru remains on the board, roll a D6. On a 1–5, an enemy player must place a bystander anywhere within 6” of the Idoru. On a 6, they must place a whole bystander crowd, instead. The bystanders act as usual. A Hacker may only control one Idoru at a time, though they can dismiss it at any time during their activation. Finally, an enemy Hacker may make a cyber-attack against the Idoru (again against a Firewall of 4). If they are successful, remove the Idoru immediately. The bystanders remain, even if the Idoru is dismissed.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="c79b-d715-4a14-12f4" name="Summon Idoru" hidden="false" targetId="de9b-dc3c-a4a9-e9fa" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6912,15 +6690,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d24-050d-ed45-a4df" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="b254-5406-2d86-65c4" name="Bloodhound" publicationId="35c0-4280-5bd0-3fd1" page="182" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">When used, place a token next to the target to indicate the software’s presence. A model may have multiple active Bloodhound tokens, but only one per target. Should a Hacker make a cyber-attack against a model with a Bloodhound token, their crew gains one Trace token. Once this occurs, remove the Bloodhound token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="9364-76c2-4e0d-f978" name="Bloodhound" hidden="false" targetId="dd79-0484-d87f-1624" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6934,25 +6706,10 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d778-3e4a-3ae5-fae3" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="3bf4-dfac-7e2b-ba89" name="Guardian Angel" publicationId="35c0-4280-5bd0-3fd1" page="182" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">2</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Use a token or model to represent the Angel Sprite and choose a point for the sprite’s tether. This must be the operative or another model. The Angel Sprite uses the below stats and rules. Note that it does not have a Cyber stat and cannot make cyber-attacks, but it can be targeted by cyber-attacks, as it is a Virtual being. A model may only control one Angel Sprite at a time. Sprites have no effect on CAT Terminals and other network nodes.</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile id="a070-0f44-d0bc-507e" name="Guardian Angel" publicationId="35c0-4280-5bd0-3fd1" page="182" hidden="false" typeId="d268-a606-8ce6-9f48" typeName=" Virtual Being">
-                          <characteristics>
-                            <characteristic name="CYB" typeId="0c4c-df75-62e0-8822">N/A</characteristic>
-                            <characteristic name="FW" typeId="ef32-239f-0670-f2ba">5</characteristic>
-                            <characteristic name="DHP" typeId="b837-3a2a-d607-511d">4</characteristic>
-                            <characteristic name="MOV/Tether" typeId="a0f4-533f-77be-3cf3">5/6</characteristic>
-                            <characteristic name="AP" typeId="4a04-f968-f43b-d12f">2</characteristic>
-                            <characteristic name="Special Rules" typeId="e038-ab6e-4d93-9033">Has the Virtual Rule. Further, one friendly model in base contact with the Angel Sprite gains a +2 bonus to their Firewall stat. This is immediately removed if the Angel Sprite leaves base contact for any reason.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="01d0-6bb4-8416-1906" name="Angel Sprite" hidden="false" targetId="6116-72da-56be-9b84" type="profile"/>
+                        <infoLink id="b65e-8100-e28e-ba8d" name="Guardian Angel" hidden="false" targetId="6ff3-d5e7-6cd2-8590" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6966,15 +6723,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5510-3b2b-ccb0-4e38" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="ce9e-c14e-7267-8d34" name="HRO-No" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">When used, place an HRO-No token next to the target. A Hacker must pass an Intelligence Test to even attempt to make a cyber-attack against the model with the HRO-No token. If they pass, they may attack as usual, and the HRO-No token is removed. On a failure, they may not attack that model and their AP is wasted.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="5d83-872a-ee70-b5ca" name="HRO-No" hidden="false" targetId="7d0f-cad3-8855-2f3b" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -6988,15 +6739,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94fb-a549-6976-5112" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="b8bd-5332-e20b-d00f" name="Logic Bomb" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Logic Bomb may be used on any friendly model. A user may only have one Logic Bomb active at a time. Put a token next to the target to indicate the presence of the bomb. This is not hidden from other players who must decide whether they want to target the model with the Logic Bomb. Logic Bomb temporarily adds a +1 FW bonus to the target. Should a cyber-attack fail against that model, the enemy Hacker who made the attempt suffers D3 digital damage. After this damage is dealt, the Logic Bomb is removed, including the +1 Firewall bonus.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="8442-5bca-2c64-6860" name="Logic Bomb" hidden="false" targetId="e551-4056-d3b2-82cc" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -7011,15 +6756,9 @@
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7f5-b088-20b9-ee20" type="max"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f801-9cb5-098c-7032" type="min"/>
                       </constraints>
-                      <profiles>
-                        <profile id="46c1-1db8-eb1b-a97e" name="Reconnect" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">Self</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Reconnect may only affect the user and heals up to D3 DHP (this cannot provide more than their starting DHP).</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="de79-9539-4bac-8225" name="Reconnect" hidden="false" targetId="f3d0-480e-f049-bed9" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -7033,15 +6772,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dda8-d9a7-1e7d-e351" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="9ee8-8787-a763-be0d" name="Shield" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Shield intertwines its own security protocols with the native programs of all friends within a short distance. Shield lasts until the start of the Hacker’s next activation. All friendly models within range gain a +1 bonus to their Firewall stat. Friendly models are defined as members of the same crew and any models under their direct control.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="06da-686d-18f7-636d" name="Shield" hidden="false" targetId="2519-512a-585e-0674" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -7059,15 +6792,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e349-0a96-6f86-7e1f" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="f905-6d00-058e-1e85" name="Camouflage" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">N/A</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">When used, the player may remove one Trace token from their crew.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="eafc-18c2-4996-e871" name="Camouflage" hidden="false" targetId="ab9a-1d45-7d67-3ad5" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -7081,37 +6808,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="473b-2354-22a2-8359" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="6cb2-46d3-6407-bc21" name="Holo-Targeting" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">N/A</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">The target gains +1 to their Aim stat during their next activation. Note that this bonus does not stack with the bonus from a neural link, as they are essentially the same thing.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
-                        <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
-                        <cost name=" Armor Bonus" typeId="2981-1df4-2754-80ba" value="0.0"/>
-                        <cost name="IP" typeId="5d12-d00a-b2c1-563c" value="0.0"/>
-                        <cost name="XP" typeId="69b9-ef2b-2cbf-3aea" value="0.0"/>
-                        <cost name=" Net Worth" typeId="2130-db16-c60c-10d7" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="24fb-8052-db96-b096" name="Hyper Sight" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d186-7a14-4828-bcc2" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="f239-ec82-c47a-5e95" name="Hyper Sight" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">The target may draw line of sight from the Hacker’s perspective for any attacks or skills they possess.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="c6e3-d5a1-724b-f7a6" name="Holo-Targeting" hidden="false" targetId="14d3-cc99-0dae-a35a" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -7125,15 +6824,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8364-16fd-8af2-1a3b" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="a52b-29f6-16d7-3d5d" name="Overclock" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">This app may only target a friendly model with a piece of chrome that provides a bonus to a Move or Strength stat. The target adds +2 to that stat during their next activation.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="7fb4-36af-020c-0bc1" name="Overclock" hidden="false" targetId="cbab-a044-2604-62c7" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -7147,25 +6840,10 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e3e-0251-c8ea-8fe4" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="830c-1b1e-39ab-d9f6" name="Summon Demon" publicationId="35c0-4280-5bd0-3fd1" page="185" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">2</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Use a token or model to designate the Demon Sprite, then choose a point for the sprite’s tether. This must be the operative or another model within range—even an enemy model. The Demon Sprite uses the below stats and rules. Note that it does not have a Cyber stat and cannot make cyber-attacks, but it can be targeted by cyber-attacks, as it is a Virtual being. A model may only control one Demon Sprite at a time. Sprites have no effect on CAT Terminals and other network nodes.</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile id="738a-a989-257c-9e1c" name="Summon Demon" hidden="false" typeId="d268-a606-8ce6-9f48" typeName=" Virtual Being">
-                          <characteristics>
-                            <characteristic name="CYB" typeId="0c4c-df75-62e0-8822">N/A</characteristic>
-                            <characteristic name="FW" typeId="ef32-239f-0670-f2ba">5</characteristic>
-                            <characteristic name="DHP" typeId="b837-3a2a-d607-511d">4</characteristic>
-                            <characteristic name="MOV/Tether" typeId="a0f4-533f-77be-3cf3">5/6</characteristic>
-                            <characteristic name="AP" typeId="4a04-f968-f43b-d12f">2</characteristic>
-                            <characteristic name="Special Rules" typeId="e038-ab6e-4d93-9033">Has the Virtual Rule. Further, one model in base contact with the Demon Sprite suffers a -2 penalty to their Firewall stat. This is immediately removed if the Demon Sprite leaves base contact for any reason.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="fe09-d788-6a58-6154" name="Demon Sprite" hidden="false" targetId="9fd2-7901-a8f3-a224" type="profile"/>
+                        <infoLink id="527e-888c-3281-1875" name="Summon Demon" hidden="false" targetId="ff5b-ce9b-93f3-6fb8" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -7179,15 +6857,13 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08c6-396d-cd1f-c918" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="33c3-02d2-27ba-4f01" name="Troubleshooter" publicationId="35c0-4280-5bd0-3fd1" page="185" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Troubleshooter targets disabled friendly models or items carried by a friendly model. The operative can also use this app on themselves and their own items. Make an Intelligence Test with a +1 bonus from the app. On a success, the model, equipment, or item is no longer disabled. On a failure, nothing happens.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="1162-5817-4a8e-314f" name="Troubleshooter" hidden="false" targetId="e6cd-b7f1-4eea-ec00" type="profile">
+                          <modifiers>
+                            <modifier type="append" field="4b98-82fb-4ecf-4817" value=" The Avatar has a Mettle of 5 for the purposes of using this stat."/>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8215,15 +7891,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4857-4446-29e1-8eb9" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="1e32-8988-6ad9-1809" name="Corrode" publicationId="35c0-4280-5bd0-3fd1" page="176" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">If successful, it reduces a target’s Firewall stat by -2 until the start of the target’s next activation or the end of the next turn’s Clean-Up Phase if the target does not activate.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="2195-40d2-c892-f2f6" name="Corrode" hidden="false" targetId="bc54-6963-b7c3-8311" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8237,15 +7907,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e245-b002-374b-7cac" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="e43e-416f-a3a5-1bd4" name="Decapitate" publicationId="35c0-4280-5bd0-3fd1" page="176" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">2</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Decapitate targets a model with DHP. If successful, the target suffers D6+2 digital damage points. If the Hacker rolls a Critical, it does D3 digital damage points and D3 actual damage points from neuro-feedback shock—unless the target is a Virtual being, in which case it does 6 digital damage points, instead. If they roll a Fumble, the Hacker suffers 1 damage point from neuro-feedback shock.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="070f-bcdb-887f-d6c2" name="Decapitate" hidden="false" targetId="b839-72fa-ea39-2457" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8259,15 +7923,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="696d-639f-05fd-95b8" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="4356-79c9-6b58-0280" name="Enslave" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Enslave only targets models with the Bot and Cyborg types. On a success, the hacker gains control over the target for 1 turn. During that turn, the Hacker may roll for the target’s Activation Test during their own initiative. Otherwise, the Hacker determines how the model spends its available AP. On a Critical, the Hacker maintains control for D3 turns, ending on the Clean-Up Phase of the last turn. On a Fumble, the target’s Firewall gains +2 until the end of the game.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="fd2d-b835-f587-43fd" name="Enslave" hidden="false" targetId="97b3-35d2-76a6-999c" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8282,15 +7940,9 @@
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="066f-e2d4-cf33-5248" type="max"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0bd-a4e8-9c48-c2db" type="min"/>
                       </constraints>
-                      <profiles>
-                        <profile id="bf03-f5f6-713d-6649" name="Gatecrasher" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">0</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Gatecrasher only targets networks. If the roll is successful, gain Access. If it is a Fumble, the Hacker’s crew gains a Trace token. A Critical has no effect.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="0d96-c60d-5512-b914" name="Gatecrasher" hidden="false" targetId="0805-83a7-99fd-a38c" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8304,15 +7956,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcdd-5b9f-8ed9-ccac" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="0e45-5178-e9fe-78b8" name="Nerf-A-Lyze" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">12</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Nerf-a-lyze can target any weapon, cyber body part, individual cybernetic enhancement, bot, or Cyborg. It has a +2 CYB bonus and a range of 12”. On a success, the target suffers the Nerf status with a -2 penalty for D3 turns. On a Critical, Nerf-a-lyze disables the target for D3 turns, instead. On a Fumble, the Hacker’s crew gains a Trace token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="d538-3b63-4484-0600" name="Nerf-A-Lyze" hidden="false" targetId="7b91-2b40-a45e-a010" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8326,15 +7972,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8d6-f6f1-db28-fc5d" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="ced3-3e9d-b8b8-1a37" name="Overheat" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Overheat targets weapons carried by other models, which includes cybernetic body parts, enhancements, and all equipment with an attack profile. On a success, the target overheats and the model carrying it automatically takes D3 damage. Criticals have no effect. On a Fumble, the Hacker’s crew gains a Trace token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="3f82-9fdd-0c23-2c8b" name="Overheat" hidden="false" targetId="f429-868b-f63c-0365" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8348,15 +7988,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bc5-3afe-a0ef-268f" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="239f-d429-0730-a4e4" name="Overload" publicationId="35c0-4280-5bd0-3fd1" page="178" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">12</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Overload targets all weapons carried by a model, including any cybernetic weapons and items with a weapon profile, and has a +1 CYB bonus. Do not nominate a single weapon for this attack—on a success, all weapons carried by the target (firearms, melee weapons, etc.) are disabled on the target’s next activation. On a Critical, the weapons are disabled for two turns, instead.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="f170-f355-fde1-a1c2" name="Overload" hidden="false" targetId="bc52-1b1e-96f7-5b9c" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8370,15 +8004,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c45-6a3a-a59f-3754" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="f3b5-61a8-4038-9663" name="Sabotage" publicationId="35c0-4280-5bd0-3fd1" page="178" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">N/A</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Hackers may use Sabotage to target anything susceptible to the Disable status. On a success, the target is disabled for D3+1 turns. On a Critical, the target is bricked instead. On a Fumble, the Hacker’s crew gains a Trace token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="8803-881c-cd8d-b551" name="Sabotage" hidden="false" targetId="47a8-9484-cfb4-ab40" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8392,15 +8020,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ebe-0774-64d2-7878" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="e589-adc3-dedb-fe23" name="Slice" publicationId="35c0-4280-5bd0-3fd1" page="178" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">12</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Slice targets models with DHP, and provides a +1 CYB bonus. On a success, the target suffers D3+1 digital damage. On a Critical, the digital damage is increased to D3+3. Fumbles have no effect.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="e143-9fa1-dc75-2329" name="Slice" hidden="false" targetId="0c19-a8e3-84ec-7bff" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8418,15 +8040,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b56f-4b80-79fc-76b6" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="9dfc-38b7-48a1-16ea" name="Control Camera" publicationId="35c0-4280-5bd0-3fd1" page="179" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Control Camera targets an intact structure or building. To do so, make a cyber-attack against a Firewall of 4. An enemy player may roll defense for the building. On a success, the Hacker may place a camera token anywhere on the building’s exterior; the token must physically touch the building. While in control of the camera, the Hacker can draw line of sight from the camera token and may use the token as a point of origin for any apps. A Hacker can only control one camera token at a time but may dismiss it at any time during their activation. Finally, an enemy Hacker may make a cyber-attack against the camera (again, against a Firewall of 4). If they are successful, remove the camera token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="cf13-a9d0-756d-2343" name="Control Camera" hidden="false" targetId="5907-0b65-e222-6130" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8440,15 +8056,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e990-05c8-7320-c996" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="346c-33f3-7a58-bf8a" name="Distortion" publicationId="35c0-4280-5bd0-3fd1" page="179" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Make a cyber-attack against a Firewall of 4. On a success, the Hacker may place a Distortion token anywhere within range. The token has a 4” area of effect and lasts until the beginning of the Hacker’s next activation phase. All models within this area of effect suffer -2 to their Cyber stat.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="a595-e0d5-9b44-43cd" name="Distortion" hidden="false" targetId="0eb4-4561-aa66-de00" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8462,15 +8072,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0353-76e7-7c47-f972" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="a056-e3d8-1d9d-fbe9" name="Light Blast" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Light Blast targets a single location or model within 6” of an intact structure or building. Make a cyber-attack against a Firewall of 4. An enemy player may roll defense for the building. On a success, place the Small Blast template over the designated location. All models under the template must pass a Survival Test (MET/ TN 10) or lose all AP during their next activation. Note that if this happens, the model’s controller should take an Activation test for the model as usual, to check for turnover.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="eb6d-003d-1697-79b8" name="Light Blast" hidden="false" targetId="a92c-e2d5-f98a-e5fd" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8484,15 +8088,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb06-dcaf-0d51-413a" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="5416-8f24-ef7a-80d0" name="Mischief Maker" publicationId="35c0-4280-5bd0-3fd1" page="180" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Mischief Maker targets a single location or model within 6” of an intact structure or building. Make a cyber-attack against a Firewall of 4. An enemy player may roll defense for the building. On a success, place the Large Blast template over the designated location. All models under the template must pass a Survival Test or suffer a -2 penalty to all Stat Tests and Opposed Tests on their next activation.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="3b6f-7931-d62a-80c9" name="Mischief Maker" hidden="false" targetId="a8d6-852e-5fb1-4cb4" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8506,15 +8104,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9cb-b38e-0afb-61e4" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="db86-b296-bb8f-6b6c" name="Raise Barrier" publicationId="35c0-4280-5bd0-3fd1" page="180" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Hackers may only use Raise Barrier in an open area more than 3” from a building or building ruins. Make a cyberattack against a Firewall of 4. An enemy player may roll defense for the barrier controller. On a success, the Hacker may place a single piece of linear terrain no more than 2” long, 1” high, and .5” thick anywhere within range. The barrier provides heavy cover and counts as a piece of linear terrain. A Hacker can only control one active barrier at a time, though they may dismiss it at any time during their activation. Finally, an enemy Hacker may make a cyber-attack against the barrier (again, against a Firewall of 4). If they are successful, remove the barrier immediately.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="813d-2b52-1acd-849d" name="Raise Barrier" hidden="false" targetId="62bd-573b-1a1d-54b6" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8528,15 +8120,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ed9-219c-f92f-eead" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="bf92-7c45-e152-9cf0" name="Summon Idoru" publicationId="35c0-4280-5bd0-3fd1" page="180" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Hackers may only use Summon Idoru within 3” of a building or similar structure. Make a cyberattack against a Firewall of 4. An enemy player may roll defense for the building. If successful, place a model representing the Idoru within range of the app. For each turn the Idoru remains on the board, roll a D6. On a 1–5, an enemy player must place a bystander anywhere within 6” of the Idoru. On a 6, they must place a whole bystander crowd, instead. The bystanders act as usual. A Hacker may only control one Idoru at a time, though they can dismiss it at any time during their activation. Finally, an enemy Hacker may make a cyber-attack against the Idoru (again against a Firewall of 4). If they are successful, remove the Idoru immediately. The bystanders remain, even if the Idoru is dismissed.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="69e9-684c-2993-115d" name="Summon Idoru" hidden="false" targetId="de9b-dc3c-a4a9-e9fa" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8554,15 +8140,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="334b-1308-ff21-a55f" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="2e59-ac69-91af-8120" name="Bloodhound" publicationId="35c0-4280-5bd0-3fd1" page="182" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">When used, place a token next to the target to indicate the software’s presence. A model may have multiple active Bloodhound tokens, but only one per target. Should a Hacker make a cyber-attack against a model with a Bloodhound token, their crew gains one Trace token. Once this occurs, remove the Bloodhound token.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="e92a-ccc3-fbf8-7ef9" name="Bloodhound" hidden="false" targetId="dd79-0484-d87f-1624" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8576,25 +8156,10 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f79-c6d6-5a67-efc6" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="19b0-9c32-9ae3-16c9" name="Guardian Angel" publicationId="35c0-4280-5bd0-3fd1" page="182" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">2</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Use a token or model to represent the Angel Sprite and choose a point for the sprite’s tether. This must be the operative or another model. The Angel Sprite uses the below stats and rules. Note that it does not have a Cyber stat and cannot make cyber-attacks, but it can be targeted by cyber-attacks, as it is a Virtual being. A model may only control one Angel Sprite at a time. Sprites have no effect on CAT Terminals and other network nodes.</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile id="c5bf-d358-5842-c679" name="Guardian Angel" publicationId="35c0-4280-5bd0-3fd1" page="182" hidden="false" typeId="d268-a606-8ce6-9f48" typeName=" Virtual Being">
-                          <characteristics>
-                            <characteristic name="CYB" typeId="0c4c-df75-62e0-8822">N/A</characteristic>
-                            <characteristic name="FW" typeId="ef32-239f-0670-f2ba">5</characteristic>
-                            <characteristic name="DHP" typeId="b837-3a2a-d607-511d">4</characteristic>
-                            <characteristic name="MOV/Tether" typeId="a0f4-533f-77be-3cf3">5/6</characteristic>
-                            <characteristic name="AP" typeId="4a04-f968-f43b-d12f">2</characteristic>
-                            <characteristic name="Special Rules" typeId="e038-ab6e-4d93-9033">Has the Virtual Rule. Further, one friendly model in base contact with the Angel Sprite gains a +2 bonus to their Firewall stat. This is immediately removed if the Angel Sprite leaves base contact for any reason.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="6e5d-1d96-8c43-9a67" name="Angel Sprite" hidden="false" targetId="6116-72da-56be-9b84" type="profile"/>
+                        <infoLink id="4232-b94f-e571-fcd5" name="Guardian Angel" hidden="false" targetId="6ff3-d5e7-6cd2-8590" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8608,15 +8173,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0be9-d347-47c9-344d" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="0ece-2666-f406-e01f" name="HRO-No" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">When used, place an HRO-No token next to the target. A Hacker must pass an Intelligence Test to even attempt to make a cyber-attack against the model with the HRO-No token. If they pass, they may attack as usual, and the HRO-No token is removed. On a failure, they may not attack that model and their AP is wasted.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="ddfc-7f42-2d3c-5ff0" name="HRO-No" hidden="false" targetId="7d0f-cad3-8855-2f3b" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8630,15 +8189,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7b5-f0c0-aa0f-c519" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="31da-279a-b74e-1ce1" name="Logic Bomb" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Logic Bomb may be used on any friendly model. A user may only have one Logic Bomb active at a time. Put a token next to the target to indicate the presence of the bomb. This is not hidden from other players who must decide whether they want to target the model with the Logic Bomb. Logic Bomb temporarily adds a +1 FW bonus to the target. Should a cyber-attack fail against that model, the enemy Hacker who made the attempt suffers D3 digital damage. After this damage is dealt, the Logic Bomb is removed, including the +1 Firewall bonus.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="4994-1523-9126-2d8a" name="Logic Bomb" hidden="false" targetId="e551-4056-d3b2-82cc" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8652,15 +8205,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbbf-2372-86b4-bc82" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="ff6c-d956-24f1-04a6" name="Reconnect" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">Self</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Reconnect may only affect the user and heals up to D3 DHP (this cannot provide more than their starting DHP).</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="7667-05ac-fff1-9bd0" name="Reconnect" hidden="false" targetId="f3d0-480e-f049-bed9" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8674,15 +8221,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffa2-4336-887b-aa7c" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="9cde-ddae-5ce0-9201" name="Shield" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Shield intertwines its own security protocols with the native programs of all friends within a short distance. Shield lasts until the start of the Hacker’s next activation. All friendly models within range gain a +1 bonus to their Firewall stat. Friendly models are defined as members of the same crew and any models under their direct control.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="6be0-295e-0cc5-0abf" name="Shield" hidden="false" targetId="2519-512a-585e-0674" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8700,15 +8241,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffa0-d6cc-1b42-d546" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="32dd-306d-f320-39b3" name="Camouflage" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">N/A</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">When used, the player may remove one Trace token from their crew.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="1522-4085-1098-4b99" name="Camouflage" hidden="false" targetId="ab9a-1d45-7d67-3ad5" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8722,15 +8257,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d642-3a40-7173-f962" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="ca2b-02eb-454d-70d0" name="Holo-Targeting" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">N/A</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">The target gains +1 to their Aim stat during their next activation. Note that this bonus does not stack with the bonus from a neural link, as they are essentially the same thing.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="c1eb-8d5b-1287-1938" name="Holo-Targeting" hidden="false" targetId="14d3-cc99-0dae-a35a" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8744,15 +8273,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24f6-ac54-ee48-8ff9" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="1235-95ed-7c64-d63b" name="Hyper Sight" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">The target may draw line of sight from the Hacker’s perspective for any attacks or skills they possess.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="c8a5-fd2f-aeb4-f10c" name="Hyper Sight" hidden="false" targetId="4a79-d16b-744f-b3d6" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8766,15 +8289,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dce-330d-a817-a5ad" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="cce8-9f66-f86b-1d1e" name="Overclock" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">This app may only target a friendly model with a piece of chrome that provides a bonus to a Move or Strength stat. The target adds +2 to that stat during their next activation.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="eddd-8179-2e65-020e" name="Overclock" hidden="false" targetId="cbab-a044-2604-62c7" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8788,25 +8305,10 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7045-0366-fdb2-2fb8" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="8c69-da83-f37b-735f" name="Summon Demon" publicationId="35c0-4280-5bd0-3fd1" page="185" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">2</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Use a token or model to designate the Demon Sprite, then choose a point for the sprite’s tether. This must be the operative or another model within range—even an enemy model. The Demon Sprite uses the below stats and rules. Note that it does not have a Cyber stat and cannot make cyber-attacks, but it can be targeted by cyber-attacks, as it is a Virtual being. A model may only control one Demon Sprite at a time. Sprites have no effect on CAT Terminals and other network nodes.</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile id="fd7e-a914-336c-1e3f" name="Summon Demon" hidden="false" typeId="d268-a606-8ce6-9f48" typeName=" Virtual Being">
-                          <characteristics>
-                            <characteristic name="CYB" typeId="0c4c-df75-62e0-8822">N/A</characteristic>
-                            <characteristic name="FW" typeId="ef32-239f-0670-f2ba">5</characteristic>
-                            <characteristic name="DHP" typeId="b837-3a2a-d607-511d">4</characteristic>
-                            <characteristic name="MOV/Tether" typeId="a0f4-533f-77be-3cf3">5/6</characteristic>
-                            <characteristic name="AP" typeId="4a04-f968-f43b-d12f">2</characteristic>
-                            <characteristic name="Special Rules" typeId="e038-ab6e-4d93-9033">Has the Virtual Rule. Further, one model in base contact with the Demon Sprite suffers a -2 penalty to their Firewall stat. This is immediately removed if the Demon Sprite leaves base contact for any reason.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="ceca-e7c1-bec5-e908" name="Demon Sprite" hidden="false" targetId="9fd2-7901-a8f3-a224" type="profile"/>
+                        <infoLink id="079e-dfa1-796e-3977" name="Summon Demon" hidden="false" targetId="ff5b-ce9b-93f3-6fb8" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -8820,15 +8322,9 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9fe-f157-dc7e-6133" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="f90b-7356-9529-94a6" name="Troubleshooter" publicationId="35c0-4280-5bd0-3fd1" page="185" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
-                          <characteristics>
-                            <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
-                            <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
-                            <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Troubleshooter targets disabled friendly models or items carried by a friendly model. The operative can also use this app on themselves and their own items. Make an Intelligence Test with a +1 bonus from the app. On a success, the model, equipment, or item is no longer disabled. On a failure, nothing happens.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
+                      <infoLinks>
+                        <infoLink id="7d34-0261-166a-5715" name="Troubleshooter" hidden="false" targetId="e6cd-b7f1-4eea-ec00" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="0.0"/>
                         <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="0.0"/>
@@ -19835,7 +19331,7 @@ A Tracer may make multiple tests each turn but may only test for each specific p
       <description>Weapons with this ability use the same rules as those with Large Blast, except you use the small 3” template, instead.</description>
     </rule>
     <rule id="05d4-223f-455d-a85d" name="Smoke" publicationId="35c0-4280-5bd0-3fd1" page="131" hidden="false">
-      <description>When using a template weapon with this ability, leave the template in play for D3 turns. Any attack that draws line of sight through or into this area of effect suffers a -2 penalty.</description>
+      <description>When using a template weapon with this ability, leave the template in play for D3 turns. Any attack that draws line of sight through, out of, or into this area of effect suffers a -2 penalty.</description>
     </rule>
     <rule id="1f22-ab91-527d-54e9" name="Stun" publicationId="35c0-4280-5bd0-3fd1" page="131" hidden="false">
       <description>Weapons with the Stun special ability do not roll to wound. Instead, the model hit must pass a Survival Test (MET/TN 10) or lose all AP during its next activation. Note that if this happens, the model’s controller should make an Activation Test for the model as usual, to check for turnover.</description>
@@ -20824,6 +20320,215 @@ A Tracer may make multiple tests each turn but may only test for each specific p
     <profile id="fa18-1ba5-ffea-d708" name="Visualizer" publicationId="35c0-4280-5bd0-3fd1" page="79" hidden="false" typeId="7fd2-fc3a-391d-df3d" typeName="Edge">
       <characteristics>
         <characteristic name="Description" typeId="ca99-c7ab-5571-776e">The Showrunner’s unique chrome counts as the tether point for the shadow backer’s avatar. At the start of the game, the avatar always starts in base contact with the Showrunner. Further, the Visualizer does count not count against the Showrunner’s Install Point Limit and cannot be disabled, bricked, etc.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bc54-6963-b7c3-8311" name="Corrode" publicationId="35c0-4280-5bd0-3fd1" page="176" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">12</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">If successful, reduces a target’s Firewall stat by -2 until the start of the target’s next activation or the end of the next turn’s Clean-Up Phase if the target does not activate.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b839-72fa-ea39-2457" name="Decapitate" publicationId="35c0-4280-5bd0-3fd1" page="176" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">2</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Decapitate targets a model with DHP. If successful, the target suffers D6+2 digital damage points. If the Hacker rolls a Critical, it does D3 digital damage points and D3 actual damage points from neuro-feedback shock—unless the target is a Virtual being, in which case it does 6 digital damage points, instead. If they roll a Fumble, the Hacker suffers 1 damage point from neuro-feedback shock.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="97b3-35d2-76a6-999c" name="Enslave" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Enslave only targets models with the Bot and Cyborg types. On a success, the hacker gains control over the target for 1 turn. During that turn, the Hacker may roll for the target’s Activation Test during their own initiative. Otherwise, the Hacker determines how the model spends its available AP. On a Critical, the Hacker maintains control for D3 turns, ending on the Clean-Up Phase of the last turn. On a Fumble, the target’s Firewall gains +2 until the end of the game.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0805-83a7-99fd-a38c" name="Gatecrasher" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">0</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Gatecrasher only targets networks. If the roll is successful, gain Access. If it is a Fumble, the Hacker’s crew gains a Trace token. A Critical has no effect.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7b91-2b40-a45e-a010" name="Nerf-A-Lyze" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">12</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Nerf-a-lyze can target any weapon, cyber body part, individual cybernetic enhancement, bot, or Cyborg. It has a +2 CYB bonus and a range of 12”. On a success, the target suffers the Nerf status with a -2 penalty for D3 turns. On a Critical, Nerf-a-lyze disables the target for D3 turns, instead. On a Fumble, the Hacker’s crew gains a Trace token.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f429-868b-f63c-0365" name="Overheat" publicationId="35c0-4280-5bd0-3fd1" page="177" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Overheat targets weapons carried by other models, which includes cybernetic body parts, enhancements, and all equipment with an attack profile. On a success, the target overheats and the model carrying it automatically takes D3 damage. Criticals have no effect. On a Fumble, the Hacker’s crew gains a Trace token.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bc52-1b1e-96f7-5b9c" name="Overload" publicationId="35c0-4280-5bd0-3fd1" page="178" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">12</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Overload targets all weapons carried by a model, including any cybernetic weapons and items with a weapon profile, and has a +1 CYB bonus. Do not nominate a single weapon for this attack—on a success, all weapons carried by the target (firearms, melee weapons, etc.) are disabled on the target’s next activation. On a Critical, the weapons are disabled for two turns, instead.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="47a8-9484-cfb4-ab40" name="Sabotage" publicationId="35c0-4280-5bd0-3fd1" page="178" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">12</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Hackers may use Sabotage to target anything susceptible to the Disable status. On a success, the target is disabled for D3+1 turns. On a Critical, the target is bricked instead. On a Fumble, the Hacker’s crew gains a Trace token.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0c19-a8e3-84ec-7bff" name="Slice" publicationId="35c0-4280-5bd0-3fd1" page="178" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">12</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Slice targets models with DHP, and provides a +1 CYB bonus. On a success, the target suffers D3+1 digital damage. On a Critical, the digital damage is increased to D3+3. Fumbles have no effect.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dd79-0484-d87f-1624" name="Bloodhound" publicationId="35c0-4280-5bd0-3fd1" page="182" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">When used, place a token next to the target to indicate the software’s presence. A model may have multiple active Bloodhound tokens, but only one per target. Should a Hacker make a cyber-attack against a model with a Bloodhound token, their crew gains one Trace token. Once this occurs, remove the Bloodhound token.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6ff3-d5e7-6cd2-8590" name="Guardian Angel" publicationId="35c0-4280-5bd0-3fd1" page="182" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">2</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Use a token or model to represent the Angel Sprite and choose a point for the sprite’s tether. This must be the operative or another model. The Angel Sprite uses the below stats and rules. Note that it does not have a Cyber stat and cannot make cyber-attacks, but it can be targeted by cyber-attacks, as it is a Virtual being. A model may only control one Angel Sprite at a time. Sprites have no effect on CAT Terminals and other network nodes.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6116-72da-56be-9b84" name="Angel Sprite" publicationId="35c0-4280-5bd0-3fd1" page="182" hidden="false" typeId="d268-a606-8ce6-9f48" typeName=" Virtual Being">
+      <characteristics>
+        <characteristic name="CYB" typeId="0c4c-df75-62e0-8822">N/A</characteristic>
+        <characteristic name="FW" typeId="ef32-239f-0670-f2ba">5</characteristic>
+        <characteristic name="DHP" typeId="b837-3a2a-d607-511d">4</characteristic>
+        <characteristic name="MOV/Tether" typeId="a0f4-533f-77be-3cf3">5/6</characteristic>
+        <characteristic name="AP" typeId="4a04-f968-f43b-d12f">2</characteristic>
+        <characteristic name="Special Rules" typeId="e038-ab6e-4d93-9033">Has the Virtual Rule. Further, one friendly model in base contact with the Angel Sprite gains a +2 bonus to their Firewall stat. This is immediately removed if the Angel Sprite leaves base contact for any reason.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7d0f-cad3-8855-2f3b" name="HRO-No" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">When used, place an HRO-No token next to the target. A Hacker must pass an Intelligence Test to even attempt to make a cyber-attack against the model with the HRO-No token. If they pass, they may attack as usual, and the HRO-No token is removed. On a failure, they may not attack that model and their AP is wasted.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e551-4056-d3b2-82cc" name="Logic Bomb" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Logic Bomb may be used on any friendly model. A user may only have one Logic Bomb active at a time. Put a token next to the target to indicate the presence of the bomb. This is not hidden from other players who must decide whether they want to target the model with the Logic Bomb. Logic Bomb temporarily adds a +2 FW bonus to the target. Should a cyber-attack fail against that model, the enemy Hacker who made the attempt suffers D3 digital damage. After this damage is dealt, the Logic Bomb is removed, including the +2 Firewall bonus.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f3d0-480e-f049-bed9" name="Reconnect" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">Self</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Reconnect may only affect the user and heals up to D3 DHP (this cannot provide more than their starting DHP).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2519-512a-585e-0674" name="Shield" publicationId="35c0-4280-5bd0-3fd1" page="183" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Shield intertwines its own security protocols with the native programs of all friends within a short distance. Shield lasts until the start of the Hacker’s next activation. All friendly models within range gain a +1 bonus to their Firewall stat. Friendly models are defined as members of the same crew and any models under their direct control.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5907-0b65-e222-6130" name="Control Camera" publicationId="35c0-4280-5bd0-3fd1" page="179" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Control Camera targets an intact structure or building. To do so, make a cyber-attack against a Firewall of 4. An enemy player may roll defense for the building. On a success, the Hacker may place a camera token anywhere on the building’s exterior; the token must physically touch the building. While in control of the camera, the Hacker can draw line of sight from the camera token and may use the token as a point of origin for any apps. A Hacker can only control one camera token at a time but may dismiss it at any time during their activation. Finally, an enemy Hacker may make a cyber-attack against the camera (again, against a Firewall of 4). If they are successful, remove the camera token.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0eb4-4561-aa66-de00" name="Distortion" publicationId="35c0-4280-5bd0-3fd1" page="179" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Make a cyber-attack against a Firewall of 4. On a success, the Hacker may place a Distortion token anywhere within range. The token has a 4” area of effect and lasts until the beginning of the Hacker’s next activation phase. All models within this area of effect suffer -2 to their Cyber stat.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a92c-e2d5-f98a-e5fd" name="Light Blast" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Light Blast targets a single location or model within 6” of an intact structure or building. Make a cyber-attack against a Firewall of 4. An enemy player may roll defense for the building. On a success, place the Small Blast template over the designated location. All models under the template must pass a Survival Test (MET/ TN 10) or lose all AP during their next activation. Note that if this happens, the model’s controller should take an Activation test for the model as usual, to check for turnover.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a8d6-852e-5fb1-4cb4" name="Mischief Maker" publicationId="35c0-4280-5bd0-3fd1" page="180" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Mischief Maker targets a single location or model within 6” of an intact structure or building. Make a cyber-attack against a Firewall of 4. An enemy player may roll defense for the building. On a success, place the Large Blast template over the designated location. All models under the template must pass a Survival Test or suffer a -2 penalty to all Stat Tests and Opposed Tests on their next activation.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="62bd-573b-1a1d-54b6" name="Raise Barrier" publicationId="35c0-4280-5bd0-3fd1" page="180" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Hackers may only use Raise Barrier in an open area more than 3” from a building or building ruins. Make a cyberattack against a Firewall of 4. An enemy player may roll defense for the barrier controller. On a success, the Hacker may place a single piece of linear terrain no more than 2” long, 1” high, and .5” thick anywhere within range. The barrier provides heavy cover and counts as a piece of linear terrain. A Hacker can only control one active barrier at a time, though they may dismiss it at any time during their activation. Finally, an enemy Hacker may make a cyber-attack against the barrier (again, against a Firewall of 4). If they are successful, remove the barrier immediately.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="de9b-dc3c-a4a9-e9fa" name="Summon Idoru" publicationId="35c0-4280-5bd0-3fd1" page="180" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Hackers may only use Summon Idoru within 3” of a building or similar structure. Make a cyberattack against a Firewall of 4. An enemy player may roll defense for the building. If successful, place a model representing the Idoru within range of the app. For each turn the Idoru remains on the board, roll a D6. On a 1–5, an enemy player must place a bystander anywhere within 6” of the Idoru. On a 6, they must place a whole bystander crowd, instead. The bystanders act as usual. A Hacker may only control one Idoru at a time, though they can dismiss it at any time during their activation. Finally, an enemy Hacker may make a cyber-attack against the Idoru (again against a Firewall of 4). If they are successful, remove the Idoru immediately. The bystanders remain, even if the Idoru is dismissed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ab9a-1d45-7d67-3ad5" name="Camouflage" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">N/A</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">When used, the player may remove one Trace token from their crew.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="14d3-cc99-0dae-a35a" name="Holo-Targeting" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">The target gains +1 to their Aim stat during their next activation. Note that this bonus does not stack with the bonus from a neural link, as they are essentially the same thing.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4a79-d16b-744f-b3d6" name="Hyper Sight" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">The target may draw line of sight from the Hacker’s perspective for any attacks or skills they possess.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cbab-a044-2604-62c7" name="Overclock" publicationId="35c0-4280-5bd0-3fd1" page="184" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">This app may only target a friendly model with a piece of chrome that provides a bonus to a Move or Strength stat. The target adds +2 to that stat during their next activation.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9fd2-7901-a8f3-a224" name="Demon Sprite" hidden="false" typeId="d268-a606-8ce6-9f48" typeName=" Virtual Being">
+      <characteristics>
+        <characteristic name="CYB" typeId="0c4c-df75-62e0-8822">N/A</characteristic>
+        <characteristic name="FW" typeId="ef32-239f-0670-f2ba">5</characteristic>
+        <characteristic name="DHP" typeId="b837-3a2a-d607-511d">4</characteristic>
+        <characteristic name="MOV/Tether" typeId="a0f4-533f-77be-3cf3">5/6</characteristic>
+        <characteristic name="AP" typeId="4a04-f968-f43b-d12f">2</characteristic>
+        <characteristic name="Special Rules" typeId="e038-ab6e-4d93-9033">Has the Virtual Rule. Further, one model in base contact with the Demon Sprite suffers a -2 penalty to their Firewall stat. This is immediately removed if the Demon Sprite leaves base contact for any reason.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ff5b-ce9b-93f3-6fb8" name="Summon Demon" publicationId="35c0-4280-5bd0-3fd1" page="185" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">2</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">6</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Use a token or model to designate the Demon Sprite, then choose a point for the sprite’s tether. This must be the operative or another model within range—even an enemy model. The Demon Sprite uses the below stats and rules. Note that it does not have a Cyber stat and cannot make cyber-attacks, but it can be targeted by cyber-attacks, as it is a Virtual being. A model may only control one Demon Sprite at a time. Sprites have no effect on CAT Terminals and other network nodes.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e6cd-b7f1-4eea-ec00" name="Troubleshooter" publicationId="35c0-4280-5bd0-3fd1" page="185" hidden="false" typeId="64c0-8b69-4bea-9a66" typeName="Apps">
+      <characteristics>
+        <characteristic name="AP" typeId="7c78-caf5-10a5-3243">1</characteristic>
+        <characteristic name="Range" typeId="206a-a420-1fef-4b05">8</characteristic>
+        <characteristic name="Description" typeId="4b98-82fb-4ecf-4817">Troubleshooter targets disabled friendly models or items carried by a friendly model. The operative can also use this app on themselves and their own items. Make an Intelligence Test with a +1 bonus from the app. On a success, the model, equipment, or item is no longer disabled. On a failure, nothing happens.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
