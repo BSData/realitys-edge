@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fd28-208c-55aa-1d7c" name="Reality&apos;s Edge" revision="2" battleScribeVersion="2.03" authorName="saikez" authorContact="saikez@yahoo.com" library="false" gameSystemId="29c4-7ecd-7e60-5177" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fd28-208c-55aa-1d7c" name="Reality&apos;s Edge" revision="3" battleScribeVersion="2.03" authorName="saikez" authorContact="saikez@yahoo.com" library="false" gameSystemId="29c4-7ecd-7e60-5177" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Built from scratch with much frustration :^)
 
 Operator and Drone profiles are changed dynamically as you make selections, and equip certain gear or chrome, including anything with the On/Off rule. Weapon profiles, and Operator profiles that are otherwise situational, are not yet dynamically changed.</readme>
@@ -5099,7 +5099,6 @@ Operator and Drone profiles are changed dynamically as you make selections, and 
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="2.0"/>
                 <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="-15.0"/>
                 <cost name=" Armor Bonus" typeId="2981-1df4-2754-80ba" value="0.0"/>
                 <cost name="IP" typeId="5d12-d00a-b2c1-563c" value="0.0"/>
@@ -5227,7 +5226,6 @@ Operator and Drone profiles are changed dynamically as you make selections, and 
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name=" Slots" typeId="2582-92bf-6634-1fe3" value="2.0"/>
                 <cost name="CC" typeId="7d2d-b9e4-4f97-2e68" value="-10.0"/>
                 <cost name=" Armor Bonus" typeId="2981-1df4-2754-80ba" value="0.0"/>
                 <cost name="IP" typeId="5d12-d00a-b2c1-563c" value="0.0"/>
@@ -18163,7 +18161,7 @@ A Tracer may make multiple tests each turn but may only test for each specific p
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f68d-405f-e6c1-08f9" type="notInstanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a9a-1f1a-91ce-12cb" type="notInstanceOf"/>
